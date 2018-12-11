@@ -1,0 +1,23 @@
+RED Configuration using Reinforcement Learning - Notes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. Use ML to implement RED. i.e. set the 'tuning' parameters using ML.
+2. Random Early Detection:
+* Congestion avoidance mechanism, to mitigate congestion in buffers/queues.
+* Parameters: 
+	i. Min threshold
+	ii. Max threshold
+	iii. Packet drop probability
+	iv. Queue length
+* Main questions:
+	i. How do you compute average queue length?
+	ii. How are thresholds decided?
+	iii. How is the drop probability assigned?
+* Primary Objective: Keep Queue length stable with good tradeoff between high throughput and low delay.
+* RED 
+- monitors average queue size at gateway Qavg,
+- when Qavg exceeds Qmin, arriving packets dropped with probability p - connections sense the congestion early on and change window sizes
+- when Qavg exceeds Qmax, evert arriving packet is dropped
+- advantages? high throughput and low delay
+- problems? sensitive to traffic load and control parameters, lots of packets dropped when Qavg > Qmax
+- objective? find the right control parameters - Qmin, Qmax, Pmax for (1) high queue length stability, (2) high link utilization, (3) low packet drops.
