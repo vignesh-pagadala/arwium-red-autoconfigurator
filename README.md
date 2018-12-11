@@ -1,22 +1,12 @@
 # Arwium RED Autoconfigurator
 
-> **[?]** 
-> Provide short description for your project here.
-
-
+Arwium - a RED autoconfigurator.
 
 ---
 
 ## About
 
-> **[?]**
-> Provide general information about your project here.
-> What problem does it (intend to) solve?
-> What is the purpose of your project?
-> Why did you undertake it?
-> You don't have to answer all the questions - just the ones relevant to your project.
-
-
+Arwium was a project done as a part of the Advanced Networking course at Colorado State University, during the Fall of 2018. The primary use-case of Arwium is to automatically find the best parametric configuration for network gateways that use the Random Early Detection algorithm for congestion avoidance. Automatic configuration of RED parameters will help taking the burden off network administrators, who might otherwise have to configure it manually. Arwium uses reinforcement learning based on observed network behavior to find optimum RED parameters, for a given network state.
 
 ### Built With
 
