@@ -40,7 +40,7 @@ To install, clone the repo:
 
 ## Usage
 
-To reproduce, compile the Python files in the /src directory:
+To reproduce, run the Python files in the /src directory:
 
 `cd /src`
 
